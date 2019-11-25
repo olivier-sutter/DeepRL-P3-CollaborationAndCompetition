@@ -29,7 +29,7 @@ Moreover, I used local and target networks to improve stability.
 
 ## Ornstein-Uhlenbeck
 
-I've also used the Ornstein-Uhlenbeck process (as suggested in the previously mentioned paper by Google DeepMind), which adds a certain amount of noise to the action values at each timestep and therefore allows the arm to maintain velocity and explore the action space.
+I've also used the Ornstein-Uhlenbeck process (as suggested in the previously mentioned paper by Google DeepMind), which adds a certain amount of noise to the action values at each timestep and therefore allows the agents to explore the action space.
 
 ## Gradient clipping
 
