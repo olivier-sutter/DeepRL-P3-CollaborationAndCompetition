@@ -17,11 +17,11 @@ Given this parameter, the value-based (Deep Q-Network) method I used for the fir
 
 ## MADDPG
 
-In [Continuous Control with Deep Reinforcement Learning](https://arxiv.org/pdf/1509.02971.pdf), written by researchers at Google DeepMind, they highlight that Deep Deterministic Policy Gradient (DDPG) can be seen as an extension of Deep Q-learning to continuous tasks. That's why I picked this "Actor-Critic" algorithm.
+In MADDPG, each agent’s critic is trained using the observations and actions from all the agents, whereas each agent’s actor is trained using just its own observations. This allows the agents to be effectively trained without requiring other agents’ observations during inference (because the actor is only dependent on its own observations).
 
-With a policy-based approach, the Actor learns how to act by directly estimating the optimal policy and maximizing reward through gradient ascent, while the Critic learns how to estimate the value of different state-action pairs with a value-based approach.
+To make this algorithm suitable for the multiple competitive agents in the Tennis environment, I implemented the algorihtm discussed in this paper, [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf), by Lowe and Wu, as below :
 
-To make this algorithm suitable for the multiple competitive agents in the Tennis environment, I implemented components discussed in this paper, [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf), by Lowe and Wu.
+<img src="assets/maddpg_pseudo_code.png" width="100%" align="top-left" alt="" title="Plot" />
 
 ##  Local and target networks 
 
