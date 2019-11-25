@@ -104,7 +104,7 @@ Initially the agent only performed a single learning iteration per episode. In g
 ## Networks
 
 In `model.py`, you can find the (almost similar) architectures of the Actor and the Critic :
-- input_size = 2*state_size = 2*24 = 48
+- input_size = 2 * state_size 
 - 2 hidden fully-connected layers with 400 and 300 nodes
 - ReLu activation function was used between fc1 and fc2
 
