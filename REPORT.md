@@ -1,10 +1,7 @@
 # Introduction
 
-<<<<<<< HEAD
 In order to solve the environment, two RL agents to play tennis. As in real tennis, the goal of each player is to keep the ball in play.
-=======
 In order to solve the environment, two RL agents to play tennis. As in real tennis, the goal of each player is to keep the ball in play. 
->>>>>>> c0935c63902fae2726cd798e6423ff848ed86fb0
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
 
 The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). The environment is considered solved when the average (over 100 episodes) of those scores is at least +0.5.
@@ -26,11 +23,7 @@ With a policy-based approach, the Actor learns how to act by directly estimating
 
 To make this algorithm suitable for the multiple competitive agents in the Tennis environment, I implemented components discussed in this paper, [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf), by Lowe and Wu.
 
-<<<<<<< HEAD
-##  Local and target networks
-=======
 ##  Local and target networks 
->>>>>>> c0935c63902fae2726cd798e6423ff848ed86fb0
 
 Moreover, I used local and target networks to improve stability.
 
@@ -81,9 +74,9 @@ I let the training continue and the moving average score peaked, reaching 1.921,
 
 The training details are shown below.
 
-<img src="assets/training_plot.png" width="40%" align="top-left" alt="" title="Plot" />
-<<<<<<< HEAD
+<img src="assets/training_plot.png" width="100%" align="top-left" alt="" title="Plot" />
 
-=======
->>>>>>> c0935c63902fae2726cd798e6423ff848ed86fb0
+# Future work
 
+- I'd like to tackle the training instability to make it more reproducible.
+- A first step toward this goal would be the addition of Batch Normalization in the neural networks, as I know it increased the perfomance of the DDPG agent in the second project.
