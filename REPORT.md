@@ -4,7 +4,7 @@ In order to solve the environment, two RL agents to play tennis. As in real tenn
 In order to solve the environment, two RL agents to play tennis. As in real tennis, the goal of each player is to keep the ball in play. 
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
 
-The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). The environment is considered solved when the average (over 100 episodes) of those scores is at least +0.5.
+The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
 
 ## Global architecture
 
