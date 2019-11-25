@@ -5,7 +5,7 @@
 
 # Project 3: Collaboration and Competition
 
-## Project introduction
+# Project introduction
 
 For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
@@ -22,7 +22,7 @@ The task is episodic, and in order to solve the environment, your agents must ge
 
 The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
-## Getting Started
+# Getting Started
 
 1. Create (and activate) a new environment with Python 3.6.
 
@@ -60,14 +60,14 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 7. Follow the instructions in `Tennis.ipynb` to get started with training your own agent!  
 
-## Environment details
+# Environment details
 
 In order to solve the environment, two RL agents to play tennis. As in real tennis, the goal of each player is to keep the ball in play. 
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
 
 The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
 
-## Global architecture
+# Global architecture
 
 - The Tennis environment has 2 different agents, whereas the Navigation project had only a single agent.
 
