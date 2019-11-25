@@ -117,16 +117,16 @@ Many tests were run but the final choice of the hyperparameters was :
 - `GAMMA` = 0.99 : discount factor
 - `TAU` = 1e-3 : for soft update of target parameters
 - `LR` = 5e-4 : learning rate
-- `LR_ACTOR` = 1e-3         # learning rate of the actor
-- `LR_CRITIC` = 1e-3        # learning rate of the critic
-- `WEIGHT_DECAY` = 0        # L2 weight decay
-- `OU_SIGMA` = 0.2          # Ornstein-Uhlenbeck noise parameter, volatility
-- `OU_THETA` = 0.15         # Ornstein-Uhlenbeck noise parameter, speed of mean reversion
-- `EPS_START` = 5.0         # initial value for epsilon in noise decay process in Agent.act()
-- `EPS_EP_END` = 1000       # episode to end the noise decay process
-- `EPS_FINAL` = 1e-6        # final value for epsilon after decay
-- `LEARN_EVERY` = 20        # learning interval (no. of episodes)
-- `LEARN_NUM` = 10          # number of passes per learning step
+- `LR_ACTOR` = 1e-3 : learning rate of the actor
+- `LR_CRITIC` = 1e-3 : learning rate of the critic
+- `WEIGHT_DECAY` = 0 : L2 weight decay
+- `OU_SIGMA` = 0.2 : Ornstein-Uhlenbeck noise parameter, volatility
+- `OU_THETA` = 0.15 : Ornstein-Uhlenbeck noise parameter, speed of mean reversion
+- `EPS_START` = 5.0 : initial value for epsilon in noise decay process in Agent.act()
+- `EPS_EP_END` = 1000 : episode to end the noise decay process
+- `EPS_FINAL` = 1e-6 : final value for epsilon after decay
+- `LEARN_EVERY` = 20 : learning interval (no. of episodes)
+- `LEARN_NUM` = 10 : number of passes per learning step
 
 # Results
 
